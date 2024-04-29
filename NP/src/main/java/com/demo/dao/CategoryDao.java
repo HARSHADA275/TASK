@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import com.demo.model.Category;
 
 @Repository
-public interface CategoryDao extends JpaRepository<Category, Long>
+public interface CategoryDao extends JpaRepository<Category, Integer>
 {   
 	// method to insert a new category into a table
 	Category save(Category c);
